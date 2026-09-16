@@ -24,7 +24,7 @@
     <article>
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="document-meta">Effective September 1, 2026</p>
+      <p class="document-meta">Effective September 16, 2026</p>
 
       <p>Closer is a personal goal-planning application developed by Nigorakhon Mamadalieva (“Closer,” “we,” “us,” or “our”). This policy explains how information is handled when you use the Closer iOS app and related online services.</p>
 
@@ -43,6 +43,11 @@
 
       <h3>Photos and generated images</h3>
       <p>Closer accesses only photos you select through Apple’s photo picker. Selected images may be stored in the app and synchronized with your account. When you request an AI-generated goal image, your prompt, relevant goal context, and any reference photos you selected are sent for processing. Closer requests permission separately before saving an exported design to your photo library.</p>
+
+      <h3>Optional personal-photo image generation</h3>
+      <p>When you enable “Include me in this image,” selecting a photo keeps it local. It is not permission to send it to an AI provider. Before you press Generate, Closer shows the selected personal photo, any scene or object reference, the dream title, scene instruction and image refinements being sent through our backend to Google Gemini. You must explicitly allow this processing and confirm that you are submitting your own photo and have permission to use the selected references. This operation does not send your full board, notes, checklist, profile or unrelated dreams.</p>
+      <p>Personal references are held transiently for the consented editing session, with a 30-minute app session limit. They are not saved as a reusable face library, biometric profile or raw selfie in your dream records or widget storage. Cancelling, expiry and ending the session clear the app-controlled references. Closer's backend processes personal references transiently; approved generated images can be saved as ordinary dream visuals and may contain your likeness. This does not guarantee that an AI result will look exactly like you.</p>
+      <p>Personal-photo processing uses Gemini through a Google Cloud project with active billing. Under Google's paid-service terms, submitted inputs and outputs are not used to improve Google's products. Google may still retain inputs and outputs temporarily for safety, security and legal purposes; Closer-controlled cleanup does not promise immediate deletion at Google. See <a href="https://ai.google.dev/gemini-api/terms">Google's Gemini API terms</a>.</p>
 
       <h3>AI feature inputs</h3>
       <p>When you choose an AI planning or personalization feature, relevant goal text, task information, answers, dates, progress, prompts, and selected images may be transmitted to our backend and our AI service provider to produce the requested result. Avoid entering information you do not want processed by an AI service.</p>
@@ -65,7 +70,7 @@
       </ul>
 
       <h2>3. Legal bases for users in the EEA, United Kingdom, and similar regions</h2>
-      <p>Where applicable, we process information because it is necessary to provide the service you request or perform our agreement with you; based on your consent, such as when you select a photo or enable notifications; to comply with legal obligations; and for legitimate interests such as securing, maintaining, and improving the reliability of Closer. You may withdraw consent through device settings or by contacting us, without affecting processing already completed.</p>
+      <p>Where applicable, we process information because it is necessary to provide the service you request or perform our agreement with you; based on your consent, such as explicit permission for personal-photo AI processing or enabling notifications; to comply with legal obligations; and for legitimate interests such as securing, maintaining, and improving the reliability of Closer. You may withdraw consent through device settings or by contacting us, without affecting processing already completed.</p>
 
       <h2>4. When information is shared</h2>
       <p>We share information only as needed with service providers that help operate Closer, including:</p>
@@ -79,9 +84,13 @@
       <h2>5. Storage and retention</h2>
       <p>Local app information remains on your device until you delete it, delete your account through the app, or remove the app, subject to iOS backup and device behavior. Server-side account and synchronized content are retained while needed to provide the service. When you delete your account, active account records and synchronized content are deleted from production systems; limited security records or backups may remain temporarily where reasonably necessary or legally required.</p>
 
+      <p>Private generation results retained by Closer's backend for request retry are deleted after the configured retention period, currently seven days, or through account deletion. An image you approve and save as a dream visual follows the app's normal saved-content retention; this seven-day retry-cache period does not automatically delete your approved dream image.</p>
+
       <h2 id="choices">6. Your choices and rights</h2>
       <ul>
         <li>Choose which photos to provide and manage photo access in iOS Settings.</li>
+        <li>Leave optional AI personalization off, remove a selected personal reference, or cancel before generation. Processing already begun at the provider may not be stopped by cancellation.</li>
+        <li>Board sharing excludes AI-personalized image variants by default unless you explicitly choose to include them; widgets use a base visual or fallback. This choice does not hide every person in ordinary uploaded photos.</li>
         <li>Enable, disable, or change notifications in Closer and iOS Settings.</li>
         <li>Manage or cancel an Apple subscription in your App Store account settings.</li>
         <li>Delete your account and associated cloud data from Closer’s Settings screen.</li>
@@ -95,8 +104,10 @@
       <h2>8. International processing</h2>
       <p>Closer and its service providers may process information in countries other than your own. Where required, we rely on appropriate safeguards for international transfers. By using online features, you understand that information may be processed where our service providers operate.</p>
 
-      <h2>9. Children</h2>
-      <p>Closer is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child provided personal information, contact us so we can review and delete it as appropriate.</p>
+      <h2>9. Adult eligibility</h2>
+      <p>Closer is intended only for adults aged 18 and over. You must confirm that you meet this requirement before using the app. This is an age declaration, not identity verification. We store its version on your device and record a declaration version and timestamp associated with your technical account when you request an online AI feature. We do not ask for your date of birth or an identity document for this confirmation.</p>
+      <p>We do not knowingly collect personal information from people under 18. If you believe someone under 18 has provided personal information, contact us so we can review the request and delete information as appropriate. Declining the age confirmation does not automatically delete an existing user's content.</p>
+      <p>Age confirmation does not authorize personal-photo processing. Optional AI image personalization requires a separate disclosure and explicit permission before selected personal references are sent to Closer's backend and Google Gemini.</p>
 
       <h2>10. Changes to this policy</h2>
       <p>We may update this policy as Closer changes. The effective date above will be revised when an update is published. Material changes may also be communicated in the app or through another appropriate notice.</p>
